@@ -1,0 +1,27 @@
+Regla de como ignorar el archivo "ignorado.txt":
+1. Crear el archivo .gitignore y agregar la regla
+
+echo "ignorado.txt" >> .gitignore
+
+Si el archivo .gitignore no existía, este comando lo crea.
+
+Agrega la línea ignorado.txt dentro de .gitignore, lo que indica a Git que ignore ese archivo.
+
+El >> asegura que se agregue la línea sin borrar contenido previo en .gitignore.
+
+
+2. Confirmar que Git está ignorando el archivo
+
+git status
+
+ignorado.txt no debería aparecer en los archivos sin seguimiento, porque ahora Git lo ignora.
+
+Sin embargo, .gitignore sí aparecerá como un archivo nuevo sin seguimiento.
+
+
+3. Agregar y confirmar .gitignore en el repositorio
+
+git add .gitignore
+git commit -m "Añadir .gitignore para ignorar ignorado.txt"
+
+Esto guarda la configuración en el repositorio.
