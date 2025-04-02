@@ -30,5 +30,14 @@ Es recomendable agregar un archivo .gitignore al inicio del proyecto, antes de r
 - [Git pro] (https://git-scm.com/book/es/v2)
 - [Chat gpt] (https://openai.com/)
 
+## Respuesta del apartado 2.3.g
+_Si resolvió correctamente los apartados 2 y 3 del punto anterior notará que el resultado es el mismo. ¿a qué se debe? ¿Qué obtiene en el punto 4? ¿Es igual a los anteriores? ¿Por qué? Responder en el archivo readme.md_
 
+- La dirección de memoria almacenada por el puntero es igual a la direccion de memoria de el puntero, ya que al puntero se le asignó la direccion de memoria de la variable. Por lo tanto cuando imprimo por pantalla la direccion que almacena es el puntero es la misma que la direccion de memoria de la variable.
+Cuando declaro: 
+**int *puntero, numero=18;**
+**puntero = &numero;**
+El puntero está almacenando la dirección de memoria de número.
+
+- Lo que obtengo al imprimir la dirección de memoria de el puntero es distinta a las anteriores. Ya que como el puntero también es una variable, ocupa una dirección de memoria. No estoy mostrando por pantalla la dirección de memoria almacenada por el puntero, sino la dirección de memoria de la misma variable puntero.
 
